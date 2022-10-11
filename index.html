@@ -18,11 +18,11 @@
 
 <body>
     <div id="wrapper">
-        <header>
-            <h1 class="nom"> Khalid TOUNOUSSI</h1>
-            <h2 class="nom activite"> Fullstack Engineer</h2>
+        <header itemscope itemtype="http://schema.org/Person">
+            <h1 itemprop="fullName" class="nom"> Khalid TOUNOUSSI</h1>
+            <h2 itemprop="activity" class="nom activite"> Fullstack Engineer</h2>
             <div class="photo">
-                <img src="img/profile.jpg" alt="profile">
+                <img itemprop="image" src="img/profile.jpg" alt="profile">
             </div>
         </header>
         <section>
@@ -30,19 +30,19 @@
                 <h2> informations de contact</h2>
                 <div class="contact-flex">
                     <p>Nom : </p>
-                    <p> TOUNOUSSI Khalid</p>
+                    <p itemprop="fullName"> TOUNOUSSI Khalid</p>
                 </div>
                 <div class="contact-flex">
                     <p>Adresse : </p>
-                    <p> 2 rue des archives, Brest</p>
+                    <p itemprop="address"> 2 rue des archives, Brest</p>
                 </div>
                 <div class="contact-flex">
                     <p>email : </p>
-                    <p> khalid.tounoussi@etudiant.univ-brest.fr</p>
+                    <p itemprop="email"> khalid.tounoussi@etudiant.univ-brest.fr</p>
                 </div>
                 <div class="contact-flex">
                     <p>nationalité : </p>
-                    <p> Marocaine</p>
+                    <p itemprop="nationality"> Marocaine</p>
                 </div>
             </div>
         </section>
@@ -55,8 +55,10 @@
                     <a href="#"> <img src="img/ibm.png" alt="Logo de IBM"></a>
                 </div>
                 <div class="exp-info">
-                    <h3> Développeur Java Docker</h3>
-                    <h4>IBM</h4>
+                    <h3 itemprop="jobTitle"> Développeur Java Docker</h3>
+                    <h4 itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
+                        <span itemprop="name">IBM </span>
+                    </h4>
                     <h4>Avril 2022- Juin 2022</h4>
                 </div>
                 <div class="exp-desc">
@@ -71,8 +73,11 @@
                     <a href="#"> <img src="img/oracle.png" alt="Logo de Oracle"></a>
                 </div>
                 <div class="exp-info">
-                    <h3> Développeur Spring</h3>
-                    <h4>Oracle</h4>
+                    <h3 itemprop="jobTitle"> Développeur Spring</h3>
+                    <h4 itemprop="worksFor" itemscope itemtype="http://schema.org/Organization"><span
+                            itemprop="name">Oracle
+                        </span>
+                    </h4>
                     <h4>Avril 2021- Juin 2021</h4>
                 </div>
                 <div class="exp-desc">
@@ -89,10 +94,10 @@
                 <div class="exp-logo">
                     <a href="#"> <img src="img/spotify.png" alt="Logo de Spotify"></a>
                 </div>
-                <div class="exp-info">
-                    <h3> DevOps</h3>
-                    <h4>Spotify</h4>
-                    <h4>Avril 2020- Juin 202</h4>
+                <div itemprop="worksFor" itemscope itemtype="http://schema.org/Organization" class="exp-info">
+                    <h3 itemprop="jobTitle"> DevOps</h3>
+                    <h4> <span itemprop="name">Spotify</span></h4>
+                    <h4>Avril 2020- Juin 2020</h4>
                 </div>
                 <div class="exp-desc">
                     <p> Projet de transformation DEVOPS pour la mise en place d’une architecture microservices, en
@@ -109,17 +114,17 @@
         </section>
 
         <!-- Section formation-->
-        <section>
+        <section itemscope itemtype="http://schema.org/EducationalOrganization">
             <h2> Formation</h2>
             <article class="exp">
                 <div class="exp-logo">
-                    <a href="#"> <img src="img/ubo.png" alt="Logo de ENsam"></a>
+                    <a href="#"> <img src="img/ubo.png" alt="Logo de Ensam"></a>
                 </div>
                 <div class="exp-info">
-                    <h3> Universit" de Bretagne Occidentale (UBO)</h3>
+                    <h3 itemprop="name"> Université de Bretagne Occidentale (UBO)</h3>
                     <h4>2022-En cours</h4>
                 </div>
-                <div class="exp-desc">
+                <div itemprop="description" class="exp-desc">
                     <p> M2 en développement Logiciel des Systèmes d'Information</p>
                 </div>
             </article>
@@ -128,10 +133,10 @@
                     <a href="#"> <img src="img/ensam.jfif" alt="Logo de ENsam"></a>
                 </div>
                 <div class="exp-info">
-                    <h3> Ecole Nationale Supérieure d'Arts et Métiers de Rabat(ENSAMR)</h3>
+                    <h3 itemprop="name"> Ecole Nationale Supérieure d'Arts et Métiers de Rabat(ENSAMR)</h3>
                     <h4>2020-En cours</h4>
                 </div>
-                <div class="exp-desc">
+                <div itemprop="description" class="exp-desc">
                     <p> Diplôme d'ingénieur en Intelligence Artificielle et Data Science
                         Modules enseignés : Machine Learning, Deep Learning, Logique des prédicats</p>
                 </div>
@@ -141,10 +146,10 @@
                     <a href="#"> <img src="img/este.png" alt="Logo de ENsam"></a>
                 </div>
                 <div class="exp-info">
-                    <h3> Ecole Supérieure de Technologie d'Essaouira(ESTE)</h3>
+                    <h3 itemprop="name"> Ecole Supérieure de Technologie d'Essaouira(ESTE)</h3>
                     <h4>2017-2020</h4>
                 </div>
-                <div class="exp-desc">
+                <div itemprop="description" class="exp-desc">
                     <p> Licence Professionnelle en Ingénierie des Systèmes et Logicielles Informatiques
                         Technologies enseignées : Java SE, Java EE, Oracle, React, NodeJS, Cisco</p>
                 </div>
@@ -152,36 +157,36 @@
         </section>
 
         <!-- Section Compétences-->
-        <section>
+        <section itemscope itemtype="http://schema.org/ItemList">
             <h2> Compétences</h2>
-            <h3 class="h3gauche">Professionnelles</h3>
+            <h3 itemprop="name" class="h3gauche">Professionnelles</h3>
             <div class="comp">
-                <p> Java SE</p>
+                <p itemprop="itemListElement"> Java SE</p>
                 <div class="conteneur-barre"> <span class="barre c100"></span></div>
             </div>
             <div class="comp">
-                <p> Java EE</p>
+                <p itemprop="itemListElement"> Java EE</p>
                 <div class="conteneur-barre"> <span class="barre c95"></span></div>
             </div>
             <div class="comp">
-                <p> Docker</p>
+                <p itemprop="itemListElement"> Docker</p>
                 <div class="conteneur-barre"> <span class="barre c85"></span></div>
             </div>
             <div class="comp">
-                <p> Git</p>
+                <p itemprop="itemListElement"> Git</p>
                 <div class="conteneur-barre"> <span class="barre c85"></span></div>
             </div>
             <div class="comp">
-                <p> JavaScript</p>
+                <p itemprop="itemListElement"> JavaScript</p>
                 <div class="conteneur-barre"> <span class="barre c95"></span></div>
             </div>
             <div class="comp">
-                <p> Dart</p>
+                <p itemprop="itemListElement"> Dart</p>
                 <div class="conteneur-barre"> <span class="barre c95"></span></div>
             </div>
             <h3 class="h3gauche">Personnelles</h3>
             <div class="comp2">
-                <p> Créativité</p>
+                <p itemprop="itemListElement"> Créativité</p>
                 <p> 95%</p>
                 <div class="conteneur-barre2"> <span class="barre c95"></span></div>
             </div>
@@ -233,10 +238,12 @@
         <footer>
             <div class="social-media-icons col-xs-12">
                 <ul class="list-inline col-xs-12">
-                    <a href="https://www.linkedin.com/in/khalid-tounoussi"><i
+                    <a itemprop="url" href="https://www.linkedin.com/in/khalid-tounoussi"><i
                             class="fa fa-linkedin-square fa-4x"></i></a>
-                    <a href="https://github.com/khalid-tounoussi"><i class="fa fa-github-square fa-4x"></i></a>
-                    <a href="https://www.facebook.com/Twanss"><i class="fa fa-facebook-square fa-4x"></i></a>
+                    <a itemprop="url" href="https://github.com/khalid-tounoussi"><i
+                            class="fa fa-github-square fa-4x"></i></a>
+                    <a itemprop="url" href="https://www.facebook.com/Twanss"><i
+                            class="fa fa-facebook-square fa-4x"></i></a>
                 </ul>
             </div>
         </footer>
