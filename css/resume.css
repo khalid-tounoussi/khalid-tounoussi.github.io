@@ -334,3 +334,28 @@ section>div {
     border-radius: 50%;
     box-shadow: 0px 0px 15px #555;
 }
+
+
+@media only screen and (max-width: 600px) {
+    #wrapper {
+        width: 100%;
+    }
+
+    h1,
+    h2 {
+        text-align: center;
+        width: 100%;
+
+    }
+
+    header h1,
+    header h2 {
+        text-align: left;
+    }
+
+    /*SECTION INFOS*/
+    .photo {
+        text-align: right;
+        margin-right: 40px;
+    }
+}
